@@ -5,6 +5,7 @@ type Query {
 
 type Mutation {
     createPost(title: String!, content: String!, writerId: ID!): Post
+    updatePost(id: ID!, content: String!): Post
 }
 
 type User {
