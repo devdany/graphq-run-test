@@ -12,6 +12,13 @@ public record Post (String id, String title, String content, String writerId) {
         new Post("post-3", "Nice Post", "It is a nice post", "user-3")
     ));
 
+    public static Post getById(String id) {
+        return posts.stream()
+				.filter(post -> post.id().equals(id))
+				.findFirst()
+				.orElse(null);
+    }
+
     public static List<Post> getAll() {
         return posts;
     }

@@ -20,3 +20,15 @@
 
 ### 출제 의도
 * SDL을 직접 작성해 봅니다.
+
+---
+
+## Chapter3 실습 문제
+### 문제
+* 강의 자료와 코드베이스의 `posts query`를 참고해서, `post query`를 직접 구현해 봅니다.
+* `post query`는 `Post` schema를 반환합니다.
+* `Post.java`에 `public static Post getById(String id)` 메서드를 구현하고, 이를 Controller의 `post`메서드에서 호출합니다.
+
+
+### 출제 의도
+* Controller에서 직접 Schema를 구현해봅니다.
