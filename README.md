@@ -8,3 +8,15 @@
 ### 출제 의도
 * GraphQL의 기본적인 쿼리 문법과 구조를 직접 작성해서 익혀봅니다.
 * GraphQL에서 Overfetching Issue를 어떻게 해결하는지 체감해봅니다.
+
+---
+
+## Chapter2 실습 문제
+### 문제
+* 강의자료 예제인 `createPost mutation` 를 보고, 응용해서 `updatePost mutation`를 작성해 봅니다.
+* `updatePost mutation`는 수정된 Post를 반환합니다.
+* `post`는 `content`필드만 수정 가능한 것으로 기능을 정의하겠습니다.
+* `updatePost`는 `ID`를 사용해서 `content`를 수정합니다. 이 필드는 둘다 Non-null이어야 합니다.
+
+### 출제 의도
+* SDL을 직접 작성해 봅니다.
