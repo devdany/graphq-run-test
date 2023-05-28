@@ -22,4 +22,20 @@ public record Post (String id, String title, String content, String writerId) {
     public static List<Post> getAll() {
         return posts;
     }
+
+    public static Post appendPost(Post post) {
+        posts.add(post);
+        return post;
+    }
+
+    public static Post updatePost(Post post) {
+        Post oldPost = getById(post.id());
+        posts.remove(oldPost);
+        posts.add(post);
+        return post;
+    }
+
+    public static String generateNewPostId() {
+        return "post-" + (posts.size() + 1);
+    }
 }

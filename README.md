@@ -32,3 +32,17 @@
 
 ### 출제 의도
 * Controller에서 직접 Schema를 구현해봅니다.
+
+---
+
+## Chapter4 실습 문제
+### 문제
+* 지금까지 공부한 내용을 바탕으로 `createPost mutation`, `updatePost mutation`을 구현합니다.
+* 기존에 SDL에 선언된 기본 Scalar타입 데이터의 나열로 되어있던 인자값은, `input`타입 한개로 처리하도록 변경합니다.
+* `Post.java`에 `public static Post appendPost(Post post)` 메서드와 `public static Post updatePost(Post post)` 메서드를 구현하고, `PostController.java`에 `@MutationMapping`을 사용해서 `createPost`, `updatePost` 메서드를 구현하세요.
+* `createPost` mutation을 구현할때에는, `ID`필드를 서버에서 generate하는 함수를 만들어보세요.
+* `updatePost` mutation을 구현할때에는, `ID`필드와 `input`필드는 분리합니다. 
+
+### 출제 의도
+* Controller에서 Mutation 스키마를 구현해봅니다.
+* input type 스키마를 사용해봅니다. 

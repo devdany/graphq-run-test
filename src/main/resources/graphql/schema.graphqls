@@ -3,9 +3,19 @@ type Query {
     posts: [Post]
 }
 
+input CreatePostInput {
+    title: String!
+    content: String!
+    writerId: ID!
+}
+
+input UpdatePostInput {
+    content: String!
+}
+
 type Mutation {
-    createPost(title: String!, content: String!, writerId: ID!): Post
-    updatePost(id: ID!, content: String!): Post
+    createPost(data: CreatePostInput!): Post
+    updatePost(id: ID!, data: UpdatePostInput!): Post
 }
 
 type User {
