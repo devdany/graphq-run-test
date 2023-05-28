@@ -46,3 +46,13 @@
 ### 출제 의도
 * Controller에서 Mutation 스키마를 구현해봅니다.
 * input type 스키마를 사용해봅니다. 
+
+---
+
+## Chapter5 실습 문제
+### 문제
+* 지금까지 배운 GraphQL지식을 사용해서, 앞에 Spring에서 구현한 GraphQL 서버를 새로 배운 NodeJS와 ApolloServer를 사용해서 그대로 구현합니다.
+
+### 출제 의도
+* GraphQL이 한 언어나 프레임워크에 제한되는것이 아님을 이해합니다.
+* SDL은 그대로 복사 붙여넣기 해서 사용할 수 있습니다.
